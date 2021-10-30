@@ -1,4 +1,5 @@
 #include <stdio.h>
+#include <ctype.h>
 
 char is_pangram(const char *str_in)
 {
@@ -13,18 +14,11 @@ char is_pangram(const char *str_in)
 		if (str_in[i] > 'a' && c[i] < 'z')
 			str[i] = c[i];
 		if (str_in[i] > 'A' && c[i] < 'Z')
-			str[i] = ft_tolower(c[i]);
+			str[i] = tolower(c[i]);
 		//str[i] = str_in[i] - 32;
 		i++;
 	}
 	return (*str);
-}
-
-int	ft_tolower(int c)
-{
-	if (c >= 'A' && c <= 'Z')
-		c += 32;
-	return (c);
 }
 
 int main()
