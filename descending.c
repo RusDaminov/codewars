@@ -1,19 +1,24 @@
 #include <inttypes.h>
 #include <stdio.h>
+#include <string.h>
 
 char *descendingOrder(uint64_t n)
 {
 	size_t i;
 	size_t j;
+	uint64_t z;
 	char *str;
 	char *tmp;
 
 	i = 0;
 	j = 0;
+//	z = strlen(str);
 
-	while (*str[i] != '\0')
+	while (n)
+//	for (i = 0; i < z; i++)
 	{
-		while (*str[j] != '\0')
+		for (j = 0; j < z; j++)
+		//while (j <= z)
 		{
 			if (str[i] < str[j])
 			{
@@ -21,11 +26,10 @@ char *descendingOrder(uint64_t n)
 				str[i] = str[j];
 				str[j] = tmp[i];
 			}
-			j++;
+//			j++;
 		}
-		i++;
+//		n++;
 	}
-
 	return (str);
 }
 
