@@ -18,7 +18,7 @@ int solution(int number)
 
 int main()
 {
-	int n = 10;
+	int n = 5;
 	printf("%d\n", solution(n));
 	return (0);
 }
