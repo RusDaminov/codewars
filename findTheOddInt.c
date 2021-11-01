@@ -42,8 +42,8 @@ int find_odd (size_t length, const int array[length])
 int main()
 {
 	size_t l;
-	const int arr = {7};
+	char *arr = {7};
 	l = 1;
-	printf("%d\n", find_odd(l, *arr));
+	printf("%d\n", find_odd(l, arr));
 
 }
