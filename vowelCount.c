@@ -10,7 +10,7 @@ size_t get_count(const char *s)
 	count = 0;
 	while (s[i])
 	{
-		if (s[i] == 97 || s[i] ==  69 || s[i] == 73 || s[i] == 79 || s[i] == 85)
+		if (s[i] == 97 || s[i] ==  101 || s[i] == 105 || s[i] == 111 || s[i] == 117)
 			count++;
 		i++;
 	}
@@ -19,8 +19,9 @@ size_t get_count(const char *s)
 
 int main()
 {
-	char *c ="abracadabra";
+	char *c ="pear tree";
 	printf("%zu\n", get_count(c));
-//	abracadabra
 	return (0);
 }
+
+//done
